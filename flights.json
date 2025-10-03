@@ -1,0 +1,122 @@
+[
+  {
+    "id": 101,
+    "airline": "IndiGo",
+    "flight_number": "6E101",
+    "from": "DEL",
+    "to": "BOM",
+    "departure_time": "2025-09-20T09:30:00",
+    "arrival_time": "2025-09-20T11:45:00",
+    "stops": 0,
+    "price": 4500,
+    "cabin": "Economy"
+  },
+  {
+    "id": 102,
+    "airline": "Air India",
+    "flight_number": "AI202",
+    "from": "BOM",
+    "to": "BLR",
+    "departure_time": "2025-09-21T14:15:00",
+    "arrival_time": "2025-09-21T16:30:00",
+    "stops": 1,
+    "price": 6200,
+    "cabin": "Business"
+  },
+  {
+    "id": 103,
+    "airline": "Vistara",
+    "flight_number": "UK303",
+    "from": "BLR",
+    "to": "HYD",
+    "departure_time": "2025-09-22T06:00:00",
+    "arrival_time": "2025-09-22T07:15:00",
+    "stops": 0,
+    "price": 2800,
+    "cabin": "Economy"
+  },
+  {
+    "id": 104,
+    "airline": "SpiceJet",
+    "flight_number": "SG404",
+    "from": "DEL",
+    "to": "GOI",
+    "departure_time": "2025-09-22T18:20:00",
+    "arrival_time": "2025-09-22T20:50:00",
+    "stops": 0,
+    "price": 5200,
+    "cabin": "Economy"
+  },
+  {
+    "id": 105,
+    "airline": "GoAir",
+    "flight_number": "G8105",
+    "from": "CCU",
+    "to": "DEL",
+    "departure_time": "2025-09-23T11:00:00",
+    "arrival_time": "2025-09-23T13:45:00",
+    "stops": 0,
+    "price": 4000,
+    "cabin": "Economy"
+  },
+  {
+    "id": 106,
+    "airline": "IndiGo",
+    "flight_number": "6E606",
+    "from": "DEL",
+    "to": "BLR",
+    "departure_time": "2025-09-23T20:30:00",
+    "arrival_time": "2025-09-23T23:15:00",
+    "stops": 0,
+    "price": 5600,
+    "cabin": "Premium Economy"
+  },
+  {
+    "id": 107,
+    "airline": "AirAsia India",
+    "flight_number": "I5107",
+    "from": "MAA",
+    "to": "DEL",
+    "departure_time": "2025-09-24T07:00:00",
+    "arrival_time": "2025-09-24T09:30:00",
+    "stops": 0,
+    "price": 3800,
+    "cabin": "Economy"
+  },
+  {
+    "id": 108,
+    "airline": "Vistara",
+    "flight_number": "UK508",
+    "from": "DEL",
+    "to": "PNQ",
+    "departure_time": "2025-09-24T15:45:00",
+    "arrival_time": "2025-09-24T18:10:00",
+    "stops": 0,
+    "price": 6100,
+    "cabin": "Business"
+  },
+  {
+    "id": 109,
+    "airline": "SpiceJet",
+    "flight_number": "SG709",
+    "from": "HYD",
+    "to": "BOM",
+    "departure_time": "2025-09-25T05:45:00",
+    "arrival_time": "2025-09-25T07:30:00",
+    "stops": 0,
+    "price": 3100,
+    "cabin": "Economy"
+  },
+  {
+    "id": 110,
+    "airline": "Air India",
+    "flight_number": "AI810",
+    "from": "DEL",
+    "to": "LKO",
+    "departure_time": "2025-09-25T12:20:00",
+    "arrival_time": "2025-09-25T13:35:00",
+    "stops": 0,
+    "price": 2600,
+    "cabin": "Economy"
+  }
+]

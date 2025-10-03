@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "first_name": "Aayush",
+    "last_name": "Gupta",
+    "email": "aayush@example.com",
+    "phone": "+91-9876543210",
+    "gender": "Male",
+    "dob": "2002-05-14",
+    "country": "India"
+  },
+  {
+    "id": 2,
+    "first_name": "Riya",
+    "last_name": "Sharma",
+    "email": "riya@example.com",
+    "phone": "+91-9123456780",
+    "gender": "Female",
+    "dob": "2001-09-22",
+    "country": "India"
+  },
+  {
+    "id": 3,
+    "first_name": "Arjun",
+    "last_name": "Verma",
+    "email": "arjun.verma@example.com",
+    "phone": "+91-9876001122",
+    "gender": "Male",
+    "dob": "1999-12-10",
+    "country": "India"
+  },
+  {
+    "id": 4,
+    "first_name": "Meera",
+    "last_name": "Nair",
+    "email": "meera.nair@example.com",
+    "phone": "+91-9812345678",
+    "gender": "Female",
+    "dob": "2000-03-05",
+    "country": "India"
+  },
+  {
+    "id": 5,
+    "first_name": "Rohit",
+    "last_name": "Patel",
+    "email": "rohit.patel@example.com",
+    "phone": "+91-9898765432",
+    "gender": "Male",
+    "dob": "1998-08-20",
+    "country": "India"
+  },
+  {
+    "id": 6,
+    "first_name": "Kavya",
+    "last_name": "Singh",
+    "email": "kavya.singh@example.com",
+    "phone": "+91-9823456789",
+    "gender": "Female",
+    "dob": "2001-06-18",
+    "country": "India"
+  },
+  {
+    "id": 7,
+    "first_name": "Vikram",
+    "last_name": "Joshi",
+    "email": "vikram.joshi@example.com",
+    "phone": "+91-9800123456",
+    "gender": "Male",
+    "dob": "1997-11-25",
+    "country": "India"
+  },
+  {
+    "id": 8,
+    "first_name": "Priya",
+    "last_name": "Desai",
+    "email": "priya.desai@example.com",
+    "phone": "+91-9811223344",
+    "gender": "Female",
+    "dob": "1999-07-09",
+    "country": "India"
+  },
+  {
+    "id": 9,
+    "first_name": "Ankit",
+    "last_name": "Mishra",
+    "email": "ankit.mishra@example.com",
+    "phone": "+91-9876549876",
+    "gender": "Male",
+    "dob": "2002-01-30",
+    "country": "India"
+  },
+  {
+    "id": 10,
+    "first_name": "Sneha",
+    "last_name": "Chopra",
+    "email": "sneha.chopra@example.com",
+    "phone": "+91-9819988776",
+    "gender": "Female",
+    "dob": "2000-04-15",
+    "country": "India"
+  }
+]
