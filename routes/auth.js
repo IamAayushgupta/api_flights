@@ -21,6 +21,13 @@ const writeUsers = (data) => {
   fs.writeFileSync(usersPath, JSON.stringify(data, null, 2));
 };
 
+router.get('/', (req, res) => {
+ return res.status(200).json({
+      success: true,
+      message: 'working'
+    });
+});
+
 // ✅ Signup API (name + phone)
 router.post('/signup', (req, res) => {
   const { first_name, last_name, email, phone, gender, dob, country } = req.body;

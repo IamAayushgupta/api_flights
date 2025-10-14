@@ -1,53 +1,51 @@
 // index.js
 const express = require('express');
 const path = require('path');
-//const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
 
 // ----- Middleware -----
-//app.use(cors()); // allow cross-origin requests (useful for Flutter/web)
 app.use(express.json()); // parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
 
-// simple request logger (dev)
+// simple request logger
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()}  ${req.method} ${req.originalUrl}`);
   next();
 });
 
 // ----- Routes -----
-// if you put routes in ./routes/users.js and ./routes/flights.js
-// ensure they export an Express router (module.exports = router)
-const usersRouter = require('./routes/users');   // expects routes/users.js
-const flightsRouter = require('./routes/flights'); // expects routes/flights.js
-const bookingsRouter = (() => {
-  try {
-    return require('./routes/bookings'); // optional if you create it later
-  } catch (e) {
-    return null;
-  }
-})();
+const usersRouter = require('./routes/users');     // optional
+const flightsRouter = require('./routes/flights'); // flights API
+const authRouter = require('./routes/auth');       // ✅ login/signup routes
 
-// mount routes
-app.use('/users', usersRouter);       // e.g. GET /users and GET /users/:id
-app.use('/flights', flightsRouter);   // e.g. GET /flights, /flights/search, /flights/:id
+let bookingsRouter;
+try {
+  bookingsRouter = require('./routes/bookings');
+} catch (e) {
+  bookingsRouter = null;
+}
+
+// Mount routes
+app.use('/users', usersRouter);
+app.use('/flights', flightsRouter);
+app.use('/auth', authRouter);        // ✅ new auth route added
 if (bookingsRouter) app.use('/bookings', bookingsRouter);
 
-// ----- Health check & root -----
+// ----- Root health check -----
 app.get('/', (req, res) => {
   res.send({
     status: 'ok',
-    message: 'Flight mock API running',
+    message: 'Flight Booking API is running 🚀',
     endpoints: [
+      '/auth/signup',
+      '/auth/login',
       '/users',
-      '/users/:id',
       '/flights',
       '/flights/search',
-      '/flights/:id',
-      '/bookings (if implemented)'
-    ]
+      '/bookings (if implemented)',
+    ],
   });
 });
 
@@ -56,13 +54,13 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Not Found' });
 });
 
-// ----- error handler -----
+// ----- Error handler -----
 app.use((err, req, res, next) => {
   console.error('Unhandled error:', err);
   res.status(err.status || 500).json({ error: err.message || 'Internal Server Error' });
 });
 
-// ----- start server -----
+// ----- Start server -----
 app.listen(PORT, () => {
-  console.log(`Server started on http://localhost:${PORT}`);
+  console.log(`✅ Server started at: http://localhost:${PORT}`);
 });
