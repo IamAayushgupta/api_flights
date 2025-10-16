@@ -11,10 +11,10 @@
   },
   {
     "id": 2,
-    "first_name": "Riya",
+    "first_name": "user",
     "last_name": "Sharma",
     "email": "riya@example.com",
-    "phone": "+91-9123456780",
+    "phone": "+91-0000000000",
     "gender": "Female",
     "dob": "2001-09-22",
     "country": "India"
